@@ -1,0 +1,42 @@
+#include<stdio.h>
+struct num
+{
+    int arr[20];
+    int n;
+    int s;
+};
+struct num read()
+{
+   struct num i; 
+   int j;
+    printf("how many numbers to be added");
+    scanf("%d",&i.n);
+    printf("enter the numbers");
+    for(j=0;j<i.n;j++)
+      scanf("%d",&i.arr[j]);
+}
+struct num compute(struct num i)
+{
+   struct num i;
+    int j;
+    i.s=0;
+    
+    for(j=0;j<i.n;j++)
+      i.s=i.s+i.arr[j];
+   
+    
+}
+struct num output(struct num i)
+{
+  
+    
+    printf("sum of numbers is %d",i.s);
+}
+int main()
+{
+    struct num i;
+    i=read();
+    i=compute(i);
+    output(i);
+
+}
