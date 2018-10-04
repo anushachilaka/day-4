@@ -14,22 +14,21 @@ struct num read()
     printf("enter the numbers");
     for(j=0;j<i.n;j++)
       scanf("%d",&i.arr[j]);
+      return i;
 }
 struct num compute(struct num i)
 {
-   struct num i;
+   
     int j;
     i.s=0;
     
     for(j=0;j<i.n;j++)
       i.s=i.s+i.arr[j];
-   
+   return i;
     
 }
-struct num output(struct num i)
+void output(struct num i)
 {
-  
-    
     printf("sum of numbers is %d",i.s);
 }
 int main()
